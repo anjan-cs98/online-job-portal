@@ -1,0 +1,38 @@
+{
+       "stg": {
+           "username": "root",
+           "password": "",
+           "database": "",
+           "host": "",
+           "port": "",
+           "dialect": "mongo",
+           "dialectOptions": {
+               "charset": "utf8mb4_unicode_ci"
+           },
+           "datetime": "yyyy-MM-dd HH:mm:ss",
+           "redis_url": "",
+           "mq_url": ""
+       },
+       "dev": {
+           "username": "",
+           "password": "",
+           "database": "",
+           "host": "",
+           "port": "27017",
+           "dialect": "mongo",
+           "dialectOptions": {
+               "charset": "utf8mb4_unicode_ci"
+           },
+           "datetime": "yyyy-MM-dd HH:mm:ss",
+           "redis_url": "",
+           "mq_url": "",
+           "uri": "mongodb://localhost:27017/job_portal"
+       },
+       "local": {
+           "username": "",
+           "password": "",
+           "database": "insta_job",
+           "host": "localhost",
+           "port": "8081"
+       }
+   }
