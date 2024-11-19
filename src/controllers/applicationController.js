@@ -24,7 +24,7 @@ const applyJob = async (req, res) => {
 
     // Check if the job exists
     const job = await Job.findById(jobId);
-    if (!checkLib.isEmpty(job)) {
+    if (checkLib.isEmpty(job)) {
       const response = responseLib.generate(1, `Job not found.`, {});
       return res.status(404).json(response);
     }
