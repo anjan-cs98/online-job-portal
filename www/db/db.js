@@ -2,8 +2,7 @@ require("dotenv").config();
 const mode = process.env.NODE_ENV || "dev";
 const mongoose = require("mongoose");
 const startServer = require("../rest/server");
-const { db } = require("../../config/appConfig");
-const dbConfig = require("../../config/dbConfig.json")[mode];
+const dbConfig = require("../../config/dbConfig.json");
 
 /*************  ✨ Codeium Command ⭐  *************/
 /**
