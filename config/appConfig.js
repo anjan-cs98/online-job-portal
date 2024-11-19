@@ -6,7 +6,8 @@ appConfig.apiVersion = "/api/v1";
 appConfig.sessionExpTime = 120 * 120;
 appConfig.baseUrl = process.env.BASE_URL || "http://localhost:3000";
 appConfig.db = {
-  uri: "mongodb://localhost:27017/insta-job-project-2k24",
+  //uri: "mongodb://localhost:27017/insta-job-project-2k24",
+  uri: "mongodb+srv://anjan-cs:a123@insta-job.fsnrp.mongodb.net/online_job_portal",
 };
 
 /**set User api config */
