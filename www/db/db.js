@@ -15,7 +15,7 @@ const startDB = (app, db_type) => {
       console.log(`Environment : ${mode} Database : ${db_type}`);
       try {
         console.log(dbConfig);
-        mongoose.connect(dbConfig.uri, {});
+        mongoose.connect(dbConfig.stg.uri, {});
         mongoose.connection.on("error", (err) => {
           console.log("Mongoose default connection error: " + err);
           process.exit(1);
