@@ -11,7 +11,8 @@
            },
            "datetime": "yyyy-MM-dd HH:mm:ss",
            "redis_url": "",
-           "mq_url": ""
+           "mq_url": "",
+           "uri":"mongodb+srv://anjan-cs:a123@insta-job.fsnrp.mongodb.net/online_job_portal"
        },
        "dev": {
            "username": "",
