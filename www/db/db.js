@@ -2,6 +2,7 @@ require("dotenv").config();
 const mode = process.env.NODE_ENV || "dev";
 const mongoose = require("mongoose");
 const startServer = require("../rest/server");
+const { db } = require("../../config/appConfig");
 const dbConfig = require("../../config/dbConfig.json")[mode];
 
 /*************  ✨ Codeium Command ⭐  *************/
@@ -14,6 +15,7 @@ const startDB = (app, db_type) => {
     case "mongo":
       console.log(`Environment : ${mode} Database : ${db_type}`);
       try {
+        console.log(dbConfig);
         mongoose.connect(dbConfig.uri, {});
         mongoose.connection.on("error", (err) => {
           console.log("Mongoose default connection error: " + err);
