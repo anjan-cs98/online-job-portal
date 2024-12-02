@@ -54,6 +54,7 @@ const getAllJobs = async (req, res) => {
     const jobs = await Job.find(query)
       .populate({
         path: "company_id",
+        select: "-password",
       })
       .sort({ createdAt: -1 });
     if (!checkLib.isEmpty(jobs)) {
